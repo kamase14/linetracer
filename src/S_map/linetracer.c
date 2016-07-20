@@ -45,9 +45,9 @@ int main(void){
 
     sw0 = P6DR & 0x01;
 
-    if(sw0 == 0x01){
+   if(sw0 == 0x00){
       ENINT();
-      ad_status();
+      ad_status(sw0);
     }
 
   }

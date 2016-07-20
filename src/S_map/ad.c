@@ -93,7 +93,7 @@ int ad_status(int sw0){
   int an1_ave,an2_ave;
 
 
-  if(sw0 == 0x01 || move_flag == 1){
+  if(sw0 == 0x00 || move_flag == 1){
   an1_ave = an2_ave = 0;
 
   for(counter=0; counter<AVE_COUNT; counter++){
@@ -131,7 +131,7 @@ int ad_status(int sw0){
   lcd_cursor(2,1);
   lcd_printch('0' + an2_ave%10);
 
-//  move_flag = 1;
+  move_flag = 1;
   }else{
     PBDR = 0xFF;
   }

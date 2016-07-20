@@ -13,4 +13,4 @@ extern void ad_init();
 extern void ad_start(unsigned char ch, unsigned char int_sw);
 extern void ad_scan(unsigned char ch_grp, unsigned char int_sw);
 extern void ad_stop(void);
-extern  int ad_status(void);
+extern  int ad_status(int sw0);
